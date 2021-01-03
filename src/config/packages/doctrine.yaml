@@ -7,7 +7,7 @@ doctrine:
                 driver: 'pdo_pssql'
                 server_version: '13.1'
                 charset: utf8
-            customer:
+            manager:
                 # configure these for your database server
                 url: '%env(resolve:DATABASE_URL_MANAGER)%'
                 driver: 'pdo_pssql'
