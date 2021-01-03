@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+
+    database:
+        build:
+            context: database
+        environment:
+            - DB_APP_USER_PASSWORD=app_user
+            - DB_MANAGER_PASSWORD=manager
+            - POSTGRES_DB=test_db
+            - POSTGRES_PASSWORD=pass
+        ports:
+            - '5432:5432'
